@@ -156,6 +156,7 @@ class ChatRoomFragment : Fragment(), ChatRoomContruct.View {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        notifyLatestRead()
         if (!EventBus.getDefault().isRegistered(this)) {
             EventBus.getDefault().register(this)
         }

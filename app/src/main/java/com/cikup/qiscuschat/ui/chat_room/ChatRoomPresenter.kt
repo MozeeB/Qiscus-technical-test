@@ -1,13 +1,11 @@
 package com.cikup.qiscuschat.ui.chat_room
 
 import com.qiscus.sdk.chat.core.QiscusCore
-import com.qiscus.sdk.chat.core.data.local.QiscusCacheManager
 import com.qiscus.sdk.chat.core.data.model.QiscusAccount
 import com.qiscus.sdk.chat.core.data.model.QiscusChatRoom
 import com.qiscus.sdk.chat.core.data.model.QiscusComment
 import com.qiscus.sdk.chat.core.data.model.QiscusRoomMember
 import com.qiscus.sdk.chat.core.data.remote.QiscusApi
-import com.qiscus.sdk.chat.core.data.remote.QiscusPusherApi
 import com.qiscus.sdk.chat.core.event.QiscusMqttStatusEvent
 import com.qiscus.sdk.chat.core.presenter.QiscusChatRoomEventHandler
 import com.qiscus.sdk.chat.core.util.QiscusAndroidUtil
