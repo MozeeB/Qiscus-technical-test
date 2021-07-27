@@ -96,25 +96,6 @@ class ChatRoomPresenter(view: ChatRoomContruct.View, chatRoomMain: QiscusChatRoo
         viewModel?.onRealtimeStatusChanged(event == QiscusMqttStatusEvent.CONNECTED)
     }
 
-    override fun onGotNewComment(qiscusComment: QiscusComment) {
-        if (qiscusComment.senderEmail.equals(qiscusAccount?.email, ignoreCase = true)) {
-            QiscusAndroidUtil.runOnBackgroundThread {
-//                commentSuccess(qiscusComment)
-            }
-        } else {
-            roomEventHandler?.onGotComment(qiscusComment)
-        }
-        if (qiscusComment.roomId == chatRoom?.id) {
-            QiscusAndroidUtil.runOnBackgroundThread {
-                if (!qiscusComment.senderEmail.equals(qiscusAccount?.email, ignoreCase = true)
-                    && QiscusCacheManager.getInstance().lastChatActivity.first
-                ) {
-                    QiscusPusherApi.getInstance().markAsRead(chatRoom?.id!!, qiscusComment.id)
-                }
-            }
-            viewModel?.onNewComment(qiscusComment)
-        }
-    }
     override fun onChatRoomNameChanged(p0: String?) {
         TODO("Not yet implemented")
     }

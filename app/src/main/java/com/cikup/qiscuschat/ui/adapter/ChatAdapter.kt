@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.cikup.qiscuschat.R
@@ -14,7 +13,6 @@ import com.qiscus.sdk.chat.core.data.model.QiscusComment
 import com.qiscus.sdk.chat.core.util.QiscusAndroidUtil
 import com.qiscus.sdk.chat.core.util.QiscusDateUtil
 import kotlinx.android.synthetic.main.item_my_chat.view.*
-import kotlinx.android.synthetic.main.item_my_chat.view.state
 import kotlinx.android.synthetic.main.item_other_chat.view.*
 import kotlinx.android.synthetic.main.item_other_chat.view.date
 import kotlinx.android.synthetic.main.item_other_chat.view.dateOfMessage

@@ -15,14 +15,10 @@ interface ChatRoomContruct {
         fun updateLastReadComment(lastReadCommentId: Long)
         fun onNewComment(qiscusComment: QiscusComment)
 
-
-
-
     }
     interface Presenter{
         fun sendChat(roomId:String,message: String)
         fun getChatRoom(roomId: String)
         fun loadCommentsAfter(comment: QiscusComment)
-        fun onGotNewComment(qiscusComment: QiscusComment)
     }
 }
