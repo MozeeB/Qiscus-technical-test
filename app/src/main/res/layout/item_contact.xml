@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarContactIV"
+        android:layout_width="@dimen/_40sdp"
+        android:src="@color/purple_500"
+        android:layout_height="@dimen/_40sdp" />
+
+    <TextView
+        android:id="@+id/nameContactTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:textColor="#000"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:id="@+id/checkIV"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_circle_purple"
+        android:src="@drawable/ic_baseline_check_24"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/removeContactIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
